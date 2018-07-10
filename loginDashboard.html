@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Dynatrace">
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		document.getElementById("login-form").submit();
+	}, false);
+</script>
+</head>
+<body>
+	<form name="login-form"
+		action="$URL"
+		method="post" class="login-form" id="login-form">
+		<input name="user" id="user" placeholder="Username" size="25"
+			value="$USER" type="hidden"> <input name="pass" id="password"
+			placeholder="Password" size="25" value="$PASSWORD" type="hidden">
+		<input name="backUri" id="backUri"
+			value="$BACKURI"
+			type="hidden">
+	</form>
+</body>
+</html>
